@@ -9,23 +9,11 @@ function type (arg) {
     else if(typeof(arg)==="boolean"){
         console.log("булевая переменная")
     }
-    else if(typeof(arg)==="null"){
-        console.log("отсутствие значения")
-    }
-    else if(typeof(arg)==="undefined"){
-        console.log("ошибочное обращение")
-    }
-    else if(typeof(arg)==="array"){
-        console.log("массив")
-    }
     else if(typeof(arg)==="function"){
         console.log("функция")
     }
     else if(typeof(arg)==="object"){
         console.log("объект")
-    }
-    else if(typeof(arg)==="regular exp"){
-        console.log("регулярное выражение")
     }
 
 
@@ -87,7 +75,7 @@ Object.defineProperty(mouse, 'littleMouse', {
 Object.defineProperty(mouse, 'area', {
     value: ["Центральная Европа", "Восточная Европа", "Западная Сибирь", "Монголия"],
     writable: false,
-    enumerable: false,
+    enumerable: true,
     configurable: false
 });
 
