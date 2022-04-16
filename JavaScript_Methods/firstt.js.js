@@ -8,7 +8,6 @@ var commands=[
 ];
 
 var Queue = {
-    k: 6,
     commands:[
         {id: "1-command", command: "go"},
         {id: "2-command", command: "rotate"},
@@ -16,6 +15,7 @@ var Queue = {
         {id: "4-command", command: "pop"},
         {id: "5-command", command: "reverse"}
     ],
+    k: commands.length,
     get property(){
         k--;
         var i = -1;
@@ -31,7 +31,7 @@ var Queue = {
         return(element.command)
     },
     set property(command){
-        k=7;
+        k=commands.length;
         var str = k + "-command";
         commands.push({id: str, command: command});
         k++;

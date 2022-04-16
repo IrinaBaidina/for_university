@@ -6,8 +6,8 @@ function dop(paragragraph, index){
     return NewStr[index];
 }
 function split(paragragraph){
-    var strLen = [0, 0, 0, 0, 0];
-    var strWor = ["", "", "", "", ""];
+    var strLen = [];
+    var strWor = [];
     arr = [
         {length: 0, words: ""},
         {length: 0, words: ""},
