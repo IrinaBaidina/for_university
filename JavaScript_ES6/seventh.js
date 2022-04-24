@@ -32,26 +32,3 @@ const count = (str, str1) =>{
     return g;
 }
 
-
-
-const groulit = (str) => {
-    var grou = [];
-    grou[0] = count(str, "Г");
-    grou[1] = count(str, "р");
-    grou[2] = count(str, "о");
-    grou[3] = count(str, "у");
-    grou[4] = count(str, "л");
-    grou[5] = count(str, "и");
-    grou[6] = count(str, "т");
-    return grou;
-}
-
-const groul = (str) =>{
-    s =  groulit(str);
-    min = s[0];
-    for (var j = 1; j<s.length; j++){
-        if (min>s[j]) {min = s[j]}
-    }
-    return min;
-}
-console.log( groul(str));
